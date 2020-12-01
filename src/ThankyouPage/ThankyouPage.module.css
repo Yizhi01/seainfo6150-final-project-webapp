@@ -1,20 +1,20 @@
 .thankyouContainer {
-	position: relative;
-	justify-content: center;
-	text-align: center;
-	min-height: 100vh;
-	color: #fff;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: #fff;
 }
 
 .tyBackground {
   position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
   background: url("../images/thankyou-large.jpg") no-repeat center center fixed;
   background-size: cover;
-	overflow: visible;
+  overflow: visible;
 }
 
 .contentArea {
@@ -26,13 +26,13 @@
 }
 
 .thankyouContainer h1{
-	font: bold 60px "open Sans", sans-serif;
-	margin-bottom: 15px;
+  font: bold 60px "open Sans", sans-serif;
+  margin-bottom: 15px;
 }
 
 .thankyouContainer p{
-	font: normal 28px "open Sans", sans-serif;
-	margin: 0 100px 40px;
+  font: normal 28px "open Sans", sans-serif;
+  margin: 0 100px 40px;
 }
 
 .contentArea a {

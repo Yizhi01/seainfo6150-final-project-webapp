@@ -43,7 +43,7 @@ function App() {
     <>
       <header>
         <nav className={styles.nav}>
-          <a className={styles.logo} href="/">Tasty Food</a>
+          <Link className={styles.logo} to="/">Tasty Food</Link>
           <ul className={styles.ul}>
             
             {/* these links should show you how to connect up a link to a specific route */}
