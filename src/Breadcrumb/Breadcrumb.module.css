@@ -1,0 +1,22 @@
+.breadcrumbList {
+  display: flex;
+  list-style: none;
+  font-size: 1.1em;
+}
+
+.breadcrumbList li+li:before {
+  padding: 8px;
+  color:green;
+  content: ">";
+}
+
+.breadcrumbTitle {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #393e46;
+}
+
+.breadcrumbTitle:hover {
+  text-decoration: underline;
+}

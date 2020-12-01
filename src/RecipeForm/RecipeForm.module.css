@@ -1,0 +1,96 @@
+input[type=text], input[type=email], textarea {
+  width: 600px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus  {
+  border: 3px solid #bedbbb;
+}
+
+.recipeForm {
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 50px 100px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 7px solid #92817a;
+}
+
+.formTitle {
+  color: #335d2d;
+  font-size: 3em;
+}
+
+.sectionTitle {
+  margin: 20px 0 0;
+  color: #707070;
+  font-size: 1.5em;
+}
+
+.recipeFormGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.groupLabel  {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+
+.groupLabel span {
+  color: red;
+}
+
+.categoryGroup, .difficultyGroup {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.dropDown {
+  font-size: 1em;
+}
+
+.optionGroup {
+  font-weight: 400;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  font-size: 1em;
+  margin: 30px 0;
+  padding: 10px 20px;
+  background-color: #59886b;
+  color: #fff;
+  border: 3px solid #59886b;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #59886b;
+  border: 3px solid #59886b;
+}
+
+
+@media (max-width: 850px) {
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+  }
+
+  .recipeFormGroup, .categoryGroup, .difficultyGroup  {
+    width: 100%;
+  }
+}
+

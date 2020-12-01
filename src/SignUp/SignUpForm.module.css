@@ -1,0 +1,66 @@
+.signUpForm, .successPage {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  padding: 80px 8% 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.signUpForm h1 {
+  align-self: center;
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
+  margin: 0 0 20px;
+}
+
+.signUpForm h3 {
+  align-self: center;
+}
+
+.formGroup {
+  width: 100%;
+  margin: 15px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.formGroup .input {
+  width: 100%;
+  margin: 10px 20px 10px 0;
+  padding: 8px;
+  border: 1px solid #bedbbb;
+  border-radius: 5px;
+  outline: none;
+}
+
+.formGroup .input:hover {
+  box-shadow: 1px 1px 5px rgba(11, 83, 30, 0.3);
+}
+
+.formGroup .input:focus {
+  border: 3px solid #bedbbb;
+}
+
+.signUpBtn {
+  width: 100%;
+  font-size: 1em;
+  margin: 10px 20px 10px 0;
+  padding: 8px;
+  background-color: #59886b;
+  border: 3px solid #59886b;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.successImage {
+  width: 60%;
+  align-self: center;
+  border-radius: 20px;
+  margin: 20px;
+}

@@ -1,0 +1,35 @@
+.recipeListItem {
+  margin: 20px 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: #222831;
+}
+
+.recipeListItem:first-child {
+  margin-left: 100px;
+}
+
+.recipeListItem:last-child {
+  margin-right: 100px;
+}
+
+.recipeListItem:hover {
+  opacity: 0.75;
+  color: teal;
+}
+
+.recipeImage {
+  width: 100%;
+}
+
+.recipeName {
+  align-self: flex-start;
+  margin: 20px 0;
+  font-family: 'Castoro', serif;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}

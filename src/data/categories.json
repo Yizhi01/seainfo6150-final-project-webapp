@@ -1,0 +1,56 @@
+{
+  "breakfast": { 
+    "id": "1", 
+    "name": "breakfast",
+    "image": {
+      "_url": "http://source.unsplash.com/Wns3U-oVoLA/960x960",
+      "_height": "960",
+      "_width": "960"
+    }
+  },
+  "lunch": { 
+    "id": "2", 
+    "name": "lunch",
+    "image": {
+      "_url": "http://source.unsplash.com/o-4jKl4hB1k/960x960",
+      "_height": "960",
+      "_width": "960"
+    }
+  },
+  "dinner": { 
+    "id": "3",
+    "name": "dinner",
+    "image": {
+      "_url": "http://source.unsplash.com/gUFI8SxNvxo/960x960",
+      "_height": "960",
+      "_width": "960"
+    }
+  },
+  "desserts": { 
+    "id": "4", 
+    "name": "desserts",
+    "image": {
+      "_url": "http://source.unsplash.com/FtWQhwpe1qc/960x960",
+      "_height": "960",
+      "_width": "960"
+    }
+  },
+  "drinks": { 
+    "id": "5", 
+    "name": "drinks",
+    "image": {
+      "_url": "http://source.unsplash.com/XoN3v3Ge7EE/960x960",
+      "_height": "960",
+      "_width": "960"
+    }
+  },
+  "holidays": { 
+    "id": "6", 
+    "name": "holidays",
+    "image": {
+      "_url": "http://source.unsplash.com/F_IST8bKxhI/960x960",
+      "_height": "960",
+      "_width": "960"
+    }
+  }
+}

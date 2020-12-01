@@ -1,0 +1,67 @@
+.signUpContainer {
+  height: 83vh;
+  display: flex;
+}
+
+.signUpLeftPanel {
+  background: url("http://source.unsplash.com/08bOYnH_r_E/1080x1680");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #111111;
+  overflow: hidden;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUpContent {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.signUpContent:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.signUpContent h1{
+	font: bold 60px "open Sans", sans-serif;
+	margin-bottom: 15px;
+}
+
+.signUpContent p{
+	font: normal 1.5em "open Sans", sans-serif;
+}
+
+.signUpRightPanel {
+  flex-basis: 60%;
+}
+
+@media (max-width: 740px) {
+  .signUpContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .signUpLeftPanel {
+    flex-direction: column;
+  }
+
+}

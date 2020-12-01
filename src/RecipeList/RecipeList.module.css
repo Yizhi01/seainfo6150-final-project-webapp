@@ -1,0 +1,33 @@
+.recipeListContainer {
+  width: 100%;
+}
+
+.categoryName {
+  margin: 30px 0;
+  text-align: center;
+  font: italic 40px 'Castoro', serif;
+  color: #707070;
+  text-transform: capitalize;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .recipeListContainer {
+    margin: 10px 20px;
+  }
+
+  .recipeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .recipeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

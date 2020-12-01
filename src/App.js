@@ -1,39 +1,66 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
+import { isEmpty } from "lodash";
 
 import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
+import CategoryList from "./CategoryList/CategoryList.jsx";
+import RecipeList from "./RecipeList/RecipeList.jsx";
+import RecipeDetail from "./RecipeDetail/RecipeDetail.jsx";
+import RecipeForm from "./RecipeForm/RecipeForm.jsx";
+import About from "./About/About.jsx";
+import SignUp from "./SignUp/SignUp.jsx";
+import ThankyouPage from "./ThankyouPage/ThankyouPage.jsx";
 import Error from "./Error/Error.jsx";
-
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
+import styles from "./App.module.css";
 
 function App() {
+  // fetch data from mock API (https://www.mockable.io/) for displaying categories and recipes 
+  const [fetchedCategories, setFetchedCategories] = useState();
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("http://demo0086689.mockable.io/recipe-categories-api");
+      const resJson = await res.json();
+      setFetchedCategories(Object.values(resJson));
+    };
+    if (isEmpty(fetchedCategories)) {
+      fetchData();
+    }
+  }, [fetchedCategories]);
+
+  const [fetchedRecipes, setFetchedRecipes] = useState();
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("http://demo0086689.mockable.io/recipes-api");
+      const resJson = await res.json();
+      setFetchedRecipes(Object.values(resJson));
+    };
+    if (isEmpty(fetchedRecipes)) {
+      fetchData();
+    }
+  }, [fetchedRecipes]);
+
   return (
     <>
       <header>
-        <nav>
-          <ul>
+        <nav className={styles.nav}>
+          <a className={styles.logo} href="/">Tasty Food</a>
+          <ul className={styles.ul}>
+            
             {/* these links should show you how to connect up a link to a specific route */}
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/foo">Foo</Link>
+              <Link to="/categoryList">Recipes</Link>
             </li>
             <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
+              <Link to="/newRecipe">New Recipe</Link>
             </li>
             <li>
-              <Link to="/baz">Baz</Link>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/signUp">Sign Up</Link>
             </li>
           </ul>
         </nav>
@@ -42,27 +69,50 @@ function App() {
             renders the first one that matches the current URL. */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
+        <Route path="/newRecipe" exact component={RecipeForm} />
+        <Route path="/about" exact component={About} />
+        <Route path="/signUp" exact component={SignUp} />
+        <Route path="/thankyou" exact component={ThankyouPage} />
+        <Route path="/categoryList" exact           
+        render={() => (
+          <CategoryList categorylist={fetchedCategories} />
+        )} />
         {/* passing parameters via a route path */}
         <Route
-          path="/bar/:categoryId/:productId"
+          path="/category/:categoryId/:categoryName"
           exact
           render={({ match }) => (
             // getting the parameters from the url and passing
             // down to the component as props
-            <Bar
+            <RecipeList
               categoryId={match.params.categoryId}
-              productId={match.params.productId}
+              categoryName={match.params.categoryName}
+              recipes={fetchedRecipes}
             />
           )}
         />
         <Route
-          path="/baz"
+          path="/recipe/:recipeId"
           exact
-          render={() => <Baz content={externalContent} />}
+          render={({ match }) => (
+            <RecipeDetail
+              recipeId={match.params.recipeId}
+              recipes={fetchedRecipes}
+            />
+          )}
         />
         <Route component={Error} />
       </Switch>
+
+      <footer className={styles.footer}>
+        <p>All images and recipes from Internet</p>
+        <p>©2020 INFO6150 FINAL PROJECT CREATED BY YIZHI LIANG</p>
+        <ul className={styles.socialMedias}>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+      </footer>
     </>
   );
 }
