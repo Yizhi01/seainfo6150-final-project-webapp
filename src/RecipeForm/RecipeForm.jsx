@@ -48,13 +48,15 @@ const RecipeForm = () => {
                 id="serves" 
                 pattern="[0-9]{1,2}" 
                 title="Please enter number from 1 to 99"
+                placeholder="Please enter number from 1 to 99"
                 required/>
             </div>
             <div className={styles.recipeFormGroup}>
               <label className={styles.groupLabel} htmlFor="cookTime">
                 Cook Time<span>*</span>
               </label>
-              <input type="text" name="cookTime" id="cookTime" required/>
+              <input type="text" name="cookTime" id="cookTime" 
+                placeholder="e.g. 1 hr 20 mins" required/>
             </div>
             <div className={styles.difficultyGroup}>
               <label className={styles.groupLabel}>Difficulty</label>
@@ -122,7 +124,7 @@ const RecipeForm = () => {
             </div>
             <div className={styles.recipeFormGroup}>
               <label className={styles.groupLabel}>Email<span>*</span></label>
-              <input type="email" required />
+              <input type="email" placeholder="example@gmail.com" required />
             </div>
             <div className={styles.recipeFormGroup}>
               <label className={styles.groupLabel}>

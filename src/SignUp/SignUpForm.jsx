@@ -24,7 +24,8 @@ const SignUpForm = () => {
           <h3>Create an Account</h3>
           <div className={styles.formGroup}>
             <label htmlFor="email">Email</label>
-            <input className={styles.input} type="email" name="email" id="email" required />
+            <input className={styles.input} type="email" name="email" id="email" 
+              placeholder="example@gmail.com" required />
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="username">Username ((only letters and numbers)</label>

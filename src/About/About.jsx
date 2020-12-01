@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./About.module.css";
 
 const About = () => {
@@ -12,7 +13,7 @@ const About = () => {
       <p>
         Welcome to Tasty Food website. It’s a good place to give you some inspiration when you try to cook at home and allow you to cook delicious dishes efficiently and effortlessly from anywhere in the world.
       </p>
-      <p>Also, if you are a cook lover and like to share your own recipe, please <a href="./signUp">join our community</a>, submit your recipe <a href="./newRecipe">here</a>!</p>
+      <p>Also, if you are a cook lover and like to share your own recipe, please <Link to="/signUp">join our community</Link>, submit your recipe <Link to="/newRecipe">here</Link>!</p>
     </div>
   )
 }
