@@ -15,7 +15,7 @@ const SignUpForm = () => {
       {submittedForm ? (
         <div className={styles.successPage} >
           <img className={styles.successImage}
-            src="http://source.unsplash.com/qWlkCwBnwOE/1000x619" alt="funny pineapples" />
+            src="https://source.unsplash.com/qWlkCwBnwOE/1000x619" alt="funny pineapples" />
           Welcome {submittedForm.get("username")}, you have signed up successfully. Enjoy exploring our website!
         </div>
       ) : (

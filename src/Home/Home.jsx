@@ -22,25 +22,25 @@ const Home = () => {
         <ul className={styles.popularGrid}>
           <li className={styles.small} >
             <Link to="recipe/13" 
-              style={{backgroundImage:"url(http://source.unsplash.com/YNMjGIPgD_c/750x750)"}} >
+              style={{backgroundImage:"url(https://source.unsplash.com/YNMjGIPgD_c/750x750)"}} >
                 Mojito Mocktails
             </Link>
           </li>
           <li className={styles.large} >
             <Link to="recipe/17" 
-              style={{backgroundImage:"url(http://source.unsplash.com/TbgRGRSwlNo/1000x500)"}} >
+              style={{backgroundImage:"url(https://source.unsplash.com/TbgRGRSwlNo/1000x500)"}} >
                 Broiled Lobster Tails
             </Link>
           </li>
           <li className={styles.large} >
             <Link to="recipe/16" 
-              style={{backgroundImage:"url(http://source.unsplash.com/UeYkqQh4PoI/1000x500)"}} >
+              style={{backgroundImage:"url(https://source.unsplash.com/UeYkqQh4PoI/1000x500)"}} >
                 Perfect Prime Rib
             </Link>
           </li>
           <li className={styles.small}>
             <Link to="recipe/18" 
-              style={{backgroundImage:"url(http://source.unsplash.com/yuAEcsAe4lk/750x750)"}} >
+              style={{backgroundImage:"url(https://source.unsplash.com/yuAEcsAe4lk/750x750)"}} >
                 Spritz Cookies
             </Link>
           </li>
@@ -78,7 +78,7 @@ const Home = () => {
           Want to keep update for our recipes or know about our upcoming events? 
           <br/>Just sign up for our mailing list.</p>
         <hr />
-        <a href="/signUp" className={styles.contactBtn}>Sign Up Now</a>
+        <Link to="/signUp" className={styles.contactBtn}>Sign Up Now</Link>
       </section>
     </div>
   )
