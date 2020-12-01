@@ -18,7 +18,7 @@ function App() {
   const [fetchedCategories, setFetchedCategories] = useState();
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://demo0086689.mockable.io/recipe-categories-api");
+      const res = await fetch("https://demo0086689.mockable.io/recipe-categories-api");
       const resJson = await res.json();
       setFetchedCategories(Object.values(resJson));
     };
@@ -30,7 +30,7 @@ function App() {
   const [fetchedRecipes, setFetchedRecipes] = useState();
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://demo0086689.mockable.io/recipes-api");
+      const res = await fetch("https://demo0086689.mockable.io/recipes-api");
       const resJson = await res.json();
       setFetchedRecipes(Object.values(resJson));
     };
