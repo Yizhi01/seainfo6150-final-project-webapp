@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./ThankyouPage.module.css";
 
 const ThankyouPage = () => {
@@ -8,7 +9,7 @@ const ThankyouPage = () => {
         <div className={styles.contentArea}>
           <h1>Thank You!</h1>
           <p>Your recipe have been sent to our team, we will review it and reach out to you soon!</p>
-          <a href="/">Back to Home</a>
+          <Link to="/">Back to Home</Link>
         </div>
       </div>
     </div>

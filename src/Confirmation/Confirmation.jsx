@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import ThankyouPage from "../ThankyouPage/ThankyouPage.jsx";
 import styles from "./Confirmation.module.css";
 
@@ -42,7 +43,7 @@ const Confirmation = (props) => {
             </div>      
           </div>
           <div className={styles.action}>
-            <a className={styles.back} href="/newRecipe" >Back to New Recipe</a>
+            <Link to="/newRecipe" className={styles.back}>Back to New Recipe</Link>
             <input 
               className={styles.button} 
               type="submit" 
