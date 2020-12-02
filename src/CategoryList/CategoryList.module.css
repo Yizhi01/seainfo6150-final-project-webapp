@@ -13,34 +13,14 @@
 .categoryGrid {
   margin: 0 100px 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
 
-.categoryItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-decoration: none;
-  color: #222831;
-}
-
-.categoryImage {
-  width: 80%;
-  border-radius: 100%;
-}
-
-.categoryName {
-  margin: 20px 0;
-  font-family: 'Castoro', serif;
-  font-size: 1.2em;
-  text-transform: capitalize;
-}
-
-.categoryItem:hover {
-  opacity: 0.75;
-  color: teal;
+@media (max-width: 900px) {
+  .categoryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {

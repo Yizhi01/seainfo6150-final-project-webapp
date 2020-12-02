@@ -1,5 +1,5 @@
 import React from "react";
-import RecipeListItem from "./RecipeListItem.jsx";
+import RecipeListItem from "../RecipeListItem/RecipeListItem.jsx";
 import styles from "./RecipeList.module.css";
 import PropTypes from "prop-types";
 

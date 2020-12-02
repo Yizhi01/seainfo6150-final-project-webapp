@@ -1,0 +1,25 @@
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: #222831;
+}
+
+.categoryImage {
+  width: 80%;
+  border-radius: 100%;
+}
+
+.categoryName {
+  margin: 20px 0;
+  font-family: 'Castoro', serif;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.categoryItem:hover {
+  opacity: 0.75;
+  color: teal;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import CategoryListItem from "../CategoryListItem/CategoryListItem.jsx";
 import styles from "./CategoryList.module.css";
 import PropTypes from "prop-types";
 
@@ -8,16 +8,7 @@ const CategoryList = (props) => {
 
   if (props.categorylist.length) {
     displayContent = props.categorylist.map((ca) => (
-      <div key={ca.id}>
-        <Link to={"/category/" + ca.id +'/' + ca.name} className={styles.categoryItem}>
-          <img
-            className={styles.categoryImage}
-            src={ca.image._url}
-            alt={ca.name}
-          />
-          <p className={styles.categoryName}>{ca.name}</p>
-        </Link>
-      </div>
+      <CategoryListItem key={ca.id} id={ca.id} name={ca.name} url={ca.image._url} />
   
     ));
   } else {
