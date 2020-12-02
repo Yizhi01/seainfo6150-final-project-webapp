@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
 import { isEmpty } from "lodash";
 
 import Home from "./Home/Home.jsx";
@@ -40,7 +40,7 @@ function App() {
   }, [fetchedRecipes]);
 
   return (
-    <>
+    <BrowserRouter>
       <header>
         <nav className={styles.nav}>
           <Link className={styles.logo} to="/">Tasty Food</Link>
@@ -113,7 +113,7 @@ function App() {
           <li><a href="https://www.instagram.com/">Instagram</a></li>
         </ul>
       </footer>
-    </>
+    </BrowserRouter>
   );
 }
 
