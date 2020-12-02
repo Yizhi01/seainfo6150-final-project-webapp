@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import ThankyouPage from "../ThankyouPage/ThankyouPage.jsx";
 import styles from "./Confirmation.module.css";
+import PropTypes from "prop-types";
 
 const Confirmation = (props) => {
-  const { data } = props;
+  const { title, description, serves, cookTime, difficulty, ingredients, instructions } = props;
 
   const [isConfirm, setConfirm] = useState();
 
@@ -21,24 +22,24 @@ const Confirmation = (props) => {
         <div className={styles.confirmContainer} >
           <p>Please confirm your recipe</p>
           <div className={styles.recipeDetail}>
-            <h1 className={styles.recipeTitle}>{data.get("title")}</h1>
+            <h1 className={styles.recipeTitle}>{title}</h1>
             <hr/>
-            <p>{data.get("description")}</p>
+            <p>{description}</p>
             <hr/>
             <div>
-              <p><span>SERVERS: </span>{data.get("serves")}</p>
-              <p><span>COOKS IN: </span>{data.get("cookTime")}</p>
-              <p><span>DIFFICULTY: </span>{data.get("difficulty")}</p>
+              <p><span>SERVERS: </span>{serves}</p>
+              <p><span>COOKS IN: </span>{cookTime}</p>
+              <p><span>DIFFICULTY: </span>{difficulty}</p>
             </div>
             <hr />
             <div>
               <h2>Ingredients:</h2>
-              <p>{data.get("ingredients")}</p>
+              <p>{ingredients}</p>
             </div>
             <hr />
             <div>
               <h2>Instructions:</h2>
-              <p>{data.get("instructions")}</p>
+              <p>{instructions}</p>
             </div>      
           </div>
           <div className={styles.action}>
@@ -53,5 +54,15 @@ const Confirmation = (props) => {
     </div>
   )
 };
+
+Confirmation.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  serves: PropTypes.string.isRequired,
+  cookTime: PropTypes.string.isRequired,
+  difficulty: PropTypes.string.isRequired,
+  ingredients: PropTypes.string.isRequired,
+  instructions: PropTypes.string.isRequired,
+}
 
 export default Confirmation;

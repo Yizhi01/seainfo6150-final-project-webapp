@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the About component correctly 1`] = `
+<div>
+  <div
+    class="aboutContainer"
+  >
+    <img
+      alt="chat with friends"
+      class="aboutImg"
+      src="https://source.unsplash.com/ZrhtQyGFG6s/1000x619"
+    />
+    <p>
+      Hey Friends 
+      <span
+        aria-label="wave hand"
+        role="img"
+      >
+        👋🏼 
+      </span>
+      , 
+    </p>
+    <p>
+      Are you looking for trying new recipes? Expecting of your holiday feast with a bang? Pressed for time?
+    </p>
+    <p>
+      Welcome to Tasty Food website. It’s a good place to give you some inspiration when you try to cook at home and allow you to cook delicious dishes efficiently and effortlessly from anywhere in the world.
+    </p>
+    <p>
+      Also, if you are a cook lover and like to share your own recipe, please 
+      <a
+        href="/signUp"
+      >
+        join our community
+      </a>
+      , submit your recipe 
+      <a
+        href="/newRecipe"
+      >
+        here
+      </a>
+      !
+    </p>
+  </div>
+</div>
+`;

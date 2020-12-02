@@ -1,5 +1,5 @@
 import React from "react";
-import SignUpForm from "./SignUpForm.jsx";
+import SignUpForm from "../SignUpForm/SignUpForm.jsx";
 import styles from "./SignUp.module.css";
 
 const SignUp = () => {

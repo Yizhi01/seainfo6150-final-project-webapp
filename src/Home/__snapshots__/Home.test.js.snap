@@ -1,56 +1,160 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the home component correctly 1`] = `
+exports[`renders the Home component correctly 1`] = `
 <div>
-  <div>
-    The home page
-    <img
-      alt="tree frog"
-      src="/images/treefrog.jpg"
-    />
-    <div>
-      <form>
-        <label
-          for="myTextId"
+  <div
+    class="homeContainer"
+  >
+    <section
+      class="jumbotron"
+    >
+      <div
+        class="heroImage"
+      />
+      <div
+        class="jumbotronContent"
+      >
+        <h1>
+          Welcome to Tasty Food
+        </h1>
+        <h3>
+          There is no sincere love than the love of food
+        </h3>
+        <a
+          class="jumbotronBtn"
+          href="/categoryList"
         >
-          Input
-        </label>
-        <input
-          id="myTextId"
-          name="myText"
-          type="text"
-        />
-        <label
-          for="myDropdownId"
+          Explore Recipes
+        </a>
+      </div>
+    </section>
+    <section
+      class="popularContainer"
+    >
+      <h3
+        class="sectionTitle"
+      >
+        Popular recipes:
+      </h3>
+      <p>
+        Looking for the best holiday recipes? Use one of our most popular recipes that will make your celebrations memorable.
+      </p>
+      <hr />
+      <ul
+        class="popularGrid"
+      >
+        <li
+          class="small"
         >
-          Input
-        </label>
-        <select
-          id="myDropdownId"
-          name="myDropdown"
+          <a
+            href="/recipe/13"
+            style="background-image: url(https://source.unsplash.com/YNMjGIPgD_c/750x750);"
+          >
+            Mojito Mocktails
+          </a>
+        </li>
+        <li
+          class="large"
         >
-          <option
-            value="foo"
+          <a
+            href="/recipe/17"
+            style="background-image: url(https://source.unsplash.com/TbgRGRSwlNo/1000x500);"
           >
-            Foo
-          </option>
-          <option
-            value="bar"
+            Broiled Lobster Tails
+          </a>
+        </li>
+        <li
+          class="large"
+        >
+          <a
+            href="/recipe/16"
+            style="background-image: url(https://source.unsplash.com/UeYkqQh4PoI/1000x500);"
           >
-            Bar
-          </option>
-          <option
-            value="baz"
+            Perfect Prime Rib
+          </a>
+        </li>
+        <li
+          class="small"
+        >
+          <a
+            href="/recipe/18"
+            style="background-image: url(https://source.unsplash.com/yuAEcsAe4lk/750x750);"
           >
-            Baz
-          </option>
-        </select>
-        <input
-          type="submit"
-          value="Send it"
-        />
-      </form>
-    </div>
+            Spritz Cookies
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section
+      class="eventContainer"
+    >
+      <h3
+        class="sectionTitle"
+      >
+        Special Events
+      </h3>
+      <p>
+        We offer a variety of special events. Whether you've cooked or don't even know what bake and roast are, we've got the perfect events for you. 
+      </p>
+      <hr />
+      <ul
+        class="eventGrid"
+      >
+        <li>
+          <h4>
+            Asian Workshop
+          </h4>
+          <p>
+            Interested in sushi and noodle? Consider coming along with one of our experts. They'll show you secrets that you're likely to miss otherwise.
+          </p>
+        </li>
+        <li>
+          <h4>
+            Harvesting Field Trip
+          </h4>
+          <p>
+            Want to experience nature's beauty without all of that annoying exercise? Take a farm tour on one of our special events.
+          </p>
+        </li>
+        <li>
+          <h4>
+            Wine Night
+          </h4>
+          <p>
+            If you are looking for friends and wine, attend this event and have a wonderful night. We'll provide music and desserts too!
+          </p>
+        </li>
+        <li>
+          <h4>
+            Cake Class
+          </h4>
+          <p>
+            Try to bakery? Sign up for our fun and educational cake classs! From the novice to the professional, we has a class for you!
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section
+      class="contactContainer"
+    >
+      <h3
+        class="sectionTitle"
+      >
+        Learn more
+      </h3>
+      <p>
+        Want to keep update for our recipes or know about our upcoming events?
+        <br />
+        Just sign up for our mailing list.
+      </p>
+      <hr />
+      <a
+        class="contactBtn"
+        href="/signUp"
+      >
+        Sign Up Now
+      </a>
+    </section>
   </div>
 </div>
 `;

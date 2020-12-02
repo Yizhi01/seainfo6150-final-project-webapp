@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the SignUp component correctly 1`] = `
+<div>
+  <div
+    class="signUpContainer"
+  >
+    <div
+      class="signUpLeftPanel"
+    >
+      <div
+        class="signUpContent"
+      >
+        <h1>
+          SIGN UP
+        </h1>
+        <p>
+          For more of the recipes you love
+        </p>
+      </div>
+    </div>
+    <div
+      class="signUpRightPanel"
+    >
+      <div>
+        <form
+          class="signUpForm"
+        >
+          <h1>
+            Tasty Food
+          </h1>
+          <h3>
+            Create an Account
+          </h3>
+          <div
+            class="formGroup"
+          >
+            <label
+              for="email"
+            >
+              Email
+            </label>
+            <input
+              class="input"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required=""
+              type="email"
+            />
+          </div>
+          <div
+            class="formGroup"
+          >
+            <label
+              for="username"
+            >
+              Username ((only letters and numbers)
+            </label>
+            <input
+              class="input"
+              id="username"
+              name="username"
+              pattern="[A-Za-z0-9]{4,20}"
+              required=""
+              title="Please enter 4-20 letters or numbers"
+              type="text"
+            />
+          </div>
+          <div
+            class="formGroup"
+          >
+            <label
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              class="input"
+              id="password"
+              name="password"
+              required=""
+              type="password"
+            />
+          </div>
+          <div
+            class="formGroup"
+          >
+            <input
+              class="signUpBtn"
+              type="submit"
+              value="Sign Up"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

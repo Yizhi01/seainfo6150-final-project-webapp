@@ -112,7 +112,7 @@ function App() {
           <li><a href="https://twitter.com/">Twitter</a></li>
           <li><a href="https://www.facebook.com/">Facebook</a></li>
           <li><a href="https://www.instagram.com/">Instagram</a></li>
-          <li><Link to="error">404 Page</Link></li>
+          <li><Link to="/error">404 Page</Link></li>
         </ul>
       </footer>
     </>

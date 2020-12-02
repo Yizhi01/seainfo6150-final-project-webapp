@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the RecipeList component correctly 1`] = `
+<div>
+  <div
+    class="recipeListContainer"
+  >
+    <h1
+      class="categoryName"
+    >
+       Recipes
+    </h1>
+    <div
+      class="recipeGrid"
+    >
+      <div>
+        <a
+          class="recipeListItem"
+          href="/recipe/14"
+        >
+          <img
+            alt="Fruit & Yogurt Smoothie"
+            class="recipeImage"
+            src="https://source.unsplash.com/CpBBsda2eRI/750x1000"
+          />
+          <p
+            class="recipeName"
+          >
+            Fruit & Yogurt Smoothie
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

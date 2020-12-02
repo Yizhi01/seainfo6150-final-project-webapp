@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the ThankyouPage component correctly 1`] = `
+<div>
+  <div
+    class="thankyouContainer"
+  >
+    <div
+      class="tyBackground"
+    >
+      <div
+        class="contentArea"
+      >
+        <h1>
+          Thank You!
+        </h1>
+        <p>
+          Your recipe have been sent to our team, we will review it and reach out to you soon!
+        </p>
+        <a
+          href="/"
+        >
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

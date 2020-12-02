@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the RecipeDetail component correctly 1`] = `
+<div>
+  <div
+    class="recipeContainer"
+  >
+    <div>
+      <nav>
+        <ol
+          class="breadcrumbList"
+        >
+          <li>
+            <a
+              class="breadcrumbTitle"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="breadcrumbTitle"
+              href="/categoryList"
+            >
+              Recipes
+            </a>
+          </li>
+          <li>
+            <a
+              class="breadcrumbTitle"
+              href="/category/5/drinks"
+            >
+              drinks
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div
+      class="recipeTop"
+    >
+      <img
+        alt="Fruit & Yogurt Smoothie"
+        class="image"
+        src="https://source.unsplash.com/CpBBsda2eRI/750x1000"
+      />
+      <div
+        class="recipeDetail"
+      >
+        <h1>
+          Fruit & Yogurt Smoothie
+        </h1>
+        <p
+          class="description"
+        >
+          This easy fruit smoothie with yogurt recipe calls for just three ingredients--yogurt, fruit juice and whatever frozen fruit you have on hand. Mix up your combinations from day to day for a healthy breakfast or snack you'll never get bored with.
+        </p>
+        <hr />
+        <div
+          class="recipeInfo"
+        >
+          <p>
+            <span>
+              SERVERS
+            </span>
+            1
+          </p>
+          <p>
+            <span>
+              COOKS IN
+            </span>
+            10 mins
+          </p>
+          <p>
+            <span>
+              DIFFICULTY
+            </span>
+            easy
+          </p>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div
+      class="recipeContent"
+    >
+      <div
+        class="ingredients"
+      >
+        <h2>
+          ingredients:
+        </h2>
+        <ul>
+          <li>
+            1 cup 3/4 cup nonfat plain yogurt
+          </li>
+          <li>
+            ¼ cup 1/2 cup 100% pure fruit juice 
+          </li>
+          <li>
+            1½ cups 1 1/2 cups (6 1/2 ounces) frozen fruit, such as blueberries, raspberries, pineapple or peaches
+          </li>
+        </ul>
+      </div>
+      <div
+        class="instructions"
+      >
+        <h2>
+          instructions:
+        </h2>
+        <ul>
+          <li>
+            <span>
+              Step 
+              1
+              :
+            </span>
+            <p>
+              Puree yogurt with juice in a blender until smooth. With the motor running, add fruit through the hole in the lid and continue to puree until smooth.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

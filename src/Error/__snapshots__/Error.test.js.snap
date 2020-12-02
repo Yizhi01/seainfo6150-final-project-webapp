@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Error component correctly 1`] = `
+<div>
+  <div
+    class="errorContainer"
+  >
+    <img
+      alt="error"
+      class="errorImage"
+      src="errorImage.png"
+    />
+    <h1>
+      Oops! Something's missing...
+    </h1>
+    <p>
+      It seems like we donut find the page you're looking for. It doesn't exist, isn't available or was loading incorrectly.
+    </p>
+    <a
+      class="backBtn"
+      href="/"
+    >
+      Back to Home
+    </a>
+  </div>
+</div>
+`;

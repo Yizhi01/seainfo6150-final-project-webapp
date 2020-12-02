@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Home from "./Home.jsx";
+import Error from "./Error.jsx";
 
-it("renders the Home component correctly", () => {
+it("renders the Error component correctly", () => {
   const { container } = render(
     <Router>
-        <Home />
+        <Error />
     </Router>
   );
   expect(container).toMatchSnapshot();

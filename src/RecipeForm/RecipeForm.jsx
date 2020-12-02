@@ -14,7 +14,15 @@ const RecipeForm = () => {
   return (
     <div>
         {submittedForm ? (
-          <Confirmation data={submittedForm}/>
+          <Confirmation
+            title={submittedForm.get("title")}
+            description={submittedForm.get("description")}
+            serves={submittedForm.get("serves")}
+            cookTime={submittedForm.get("cookTime")}
+            difficulty={submittedForm.get("difficulty")}
+            ingredients={submittedForm.get("ingredients")}
+            instructions={submittedForm.get("instructions")}
+          />
         ) : (
           <form className={styles.recipeForm} onSubmit={onSubmit}>
             <h1 className={styles.formTitle}>Share your recipe with us!</h1>

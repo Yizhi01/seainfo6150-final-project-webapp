@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Confirmation component correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="confirmContainer"
+    >
+      <p>
+        Please confirm your recipe
+      </p>
+      <div
+        class="recipeDetail"
+      >
+        <h1
+          class="recipeTitle"
+        >
+          cake
+        </h1>
+        <hr />
+        <p>
+          cupcake
+        </p>
+        <hr />
+        <div>
+          <p>
+            <span>
+              SERVERS: 
+            </span>
+            2
+          </p>
+          <p>
+            <span>
+              COOKS IN: 
+            </span>
+            20 mins
+          </p>
+          <p>
+            <span>
+              DIFFICULTY: 
+            </span>
+            easy
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h2>
+            Ingredients:
+          </h2>
+          <p>
+            flour, sugar
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h2>
+            Instructions:
+          </h2>
+          <p>
+            mix ingredients and bake cake
+          </p>
+        </div>
+      </div>
+      <div
+        class="action"
+      >
+        <input
+          class="button"
+          type="submit"
+          value="Confirm recipe"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

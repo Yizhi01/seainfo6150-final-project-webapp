@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Breadcrumb component correctly 1`] = `
+<div>
+  <div>
+    <nav>
+      <ol
+        class="breadcrumbList"
+      >
+        <li>
+          <a
+            class="breadcrumbTitle"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="breadcrumbTitle"
+            href="/categoryList"
+          >
+            Recipes
+          </a>
+        </li>
+        <li>
+          <a
+            class="breadcrumbTitle"
+            href="/category/1/Breakfast"
+          >
+            Breakfast
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+`;

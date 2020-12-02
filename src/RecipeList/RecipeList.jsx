@@ -1,4 +1,5 @@
 import React from "react";
+import { isEmpty } from "lodash";
 import RecipeListItem from "../RecipeListItem/RecipeListItem.jsx";
 import styles from "./RecipeList.module.css";
 import PropTypes from "prop-types";
@@ -6,7 +7,7 @@ import PropTypes from "prop-types";
 const RecipeList = (props) => {
   const { categoryId, recipes } = props; 
   let recipelist;
-  if (recipes !== null && recipes.length) {
+  if (!isEmpty(recipes)) {
     recipelist = recipes.map((recipe) => {
       if (recipe.categoryId === categoryId) {
         return (
